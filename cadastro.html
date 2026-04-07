@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Gastos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de Gastos</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="listagem.html">Listagem</a>
+      </nav>
+    </header>
+    <main>
+      <form id="form-gasto">
+        <input type="text" id="descricao" placeholder="Descrição" required />
+        <input type="number" id="valor" placeholder="Valor" required />
+        <select id="categoria" required>
+          <option value="">Categoria</option>
+          <option value="Alimentação">Alimentação</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <button type="submit">Adicionar</button>
+      </form>
+      <div id="msg"></div>
+    </main>
+  </body>
+</html>
